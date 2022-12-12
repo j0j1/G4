@@ -1,0 +1,15 @@
+span.vertical {
+    display: block;
+    transform: translateY(-100px);
+    opacity: 0;
+}
+
+/* span.left {
+    display: block;
+    transform: translateX(-10vw);
+}
+
+span.right {
+    display: block;
+    transform: translateX(+10vw);
+} */
