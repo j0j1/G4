@@ -1,10 +1,7 @@
 const cors = require("cors");
 const express = require('express');
 const app = express();
-const bodyParser = require("body-parser");
-const nodemailer = require("nodemailer");
-const { uploadToCloudinary, removeFromCloudinary} = require("./services/cloudinary")
-const upload = require("./middleware/upload");
+const helmet = require("helmet");
 
 const corsOptions = {
   origin: "http://localhost:8081"
@@ -23,10 +20,7 @@ const {
     postSignIn
 } = require("./handlers");
 
-
-
-
-
+app.use(helmet())
 app.use(function(req, res, next) {
   res.header(
     'Access-Control-Allow-Methods',
