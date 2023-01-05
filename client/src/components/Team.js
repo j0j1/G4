@@ -12,7 +12,7 @@ const Team = ({mistymountain}) => {
     const [loaded, setloaded] = useState(false);
 
     useEffect(() => {
-        fetch('/api/getg4team')
+        fetch('https://g4serever-production.up.railway.app/api/getg4team')
             .then((res) => res.json())
             .then((data) => {
                 setTeam(data.data)

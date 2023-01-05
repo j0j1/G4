@@ -25,7 +25,7 @@ const Contact = () => {
         e.preventDefault();
         console.log(subject)
 
-        fetch("/api/send_email", {
+        fetch("https://g4serever-production.up.railway.app/api/getg4team", {
             method: "POST",
             headers: {
             "Content-Type": "application/json",
